@@ -10,13 +10,7 @@ var textThree = document.querySelector('.textThree');
 var main = document.querySelector('.main');
 var template = document.querySelector('#template-main');
 
-/*
-var play = function () {
-  return Math.round(Math.random() * 100);
-}
-var number = play();
-console.log(number);
-*/
+
 var number = Math.round(Math.random() * 100);
 console.log(number);
 
@@ -31,44 +25,6 @@ main.innerHTML = 'Введите число поменьше';
   } else {
   main.innerHTML = 'Введите число побольше';
   }
-  /*
- var oneNumber = function (min, max) {
-	return Math.floor(Math.random() * (max - min + 1)) + min;
-};
-*/
-
-  /*
- var number = Math.round(Math.random() * 100);
-    console.log(number);
-  var oneNumber = function () {
-
-  
-    return function () {
-while (text.value !== number) {
-  
-  
-  if (text.value < number) {
-return 'Введите число побольше';
-  } else {
-return 'Введите число поменьше';
-  }
-  
-  
-  if (number === text.value) {
-return 'Вы угадали!';
-  }
-           
-  }
-    }
-};
-  
- var item = template.content.cloneNode(true);
-  item.querySelector('.result').textContent = oneNumber()();
-main.append(item);
-
-*/
 text.value = '';
            
-
-
 });
